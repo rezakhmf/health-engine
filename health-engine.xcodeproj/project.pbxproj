@@ -19,10 +19,12 @@
 		57ED59031EA6F31600BF0CD0 /* FoundImage+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED59021EA6F31600BF0CD0 /* FoundImage+Init.swift */; };
 		57ED59061EA7014100BF0CD0 /* ImageViewerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED59051EA7014100BF0CD0 /* ImageViewerError.swift */; };
 		57ED59081EA7041B00BF0CD0 /* DisplayImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED59071EA7041B00BF0CD0 /* DisplayImage.swift */; };
-		57ED590A1EA71A2600BF0CD0 /* DisplayImage+Biz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED59091EA71A2600BF0CD0 /* DisplayImage+Biz.swift */; };
-		57ED590C1EA7211500BF0CD0 /* DisplayImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED590B1EA7211500BF0CD0 /* DisplayImage+Util.swift */; };
+		57ED590A1EA71A2600BF0CD0 /* FoundImage+Biz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED59091EA71A2600BF0CD0 /* FoundImage+Biz.swift */; };
+		57ED590C1EA7211500BF0CD0 /* FoundImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ED590B1EA7211500BF0CD0 /* FoundImage+Util.swift */; };
 		84BDAA17FD4C09E5F7208FED /* Pods_health_engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A516F3D90014AA7C27F0A95 /* Pods_health_engine.framework */; };
 		BE1F49CAA5BB8F322A1E9156 /* Pods_health_engineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D5931A135097E0266988 /* Pods_health_engineTests.framework */; };
+		F55990781EA86693001F0769 /* DisplayImage+Biz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55990771EA86693001F0769 /* DisplayImage+Biz.swift */; };
+		F559907A1EA882C9001F0769 /* FlickrImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55990791EA882C9001F0769 /* FlickrImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +69,12 @@
 		57ED59021EA6F31600BF0CD0 /* FoundImage+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoundImage+Init.swift"; sourceTree = "<group>"; };
 		57ED59051EA7014100BF0CD0 /* ImageViewerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerError.swift; sourceTree = "<group>"; };
 		57ED59071EA7041B00BF0CD0 /* DisplayImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayImage.swift; sourceTree = "<group>"; };
-		57ED59091EA71A2600BF0CD0 /* DisplayImage+Biz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisplayImage+Biz.swift"; sourceTree = "<group>"; };
-		57ED590B1EA7211500BF0CD0 /* DisplayImage+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisplayImage+Util.swift"; sourceTree = "<group>"; };
+		57ED59091EA71A2600BF0CD0 /* FoundImage+Biz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoundImage+Biz.swift"; sourceTree = "<group>"; };
+		57ED590B1EA7211500BF0CD0 /* FoundImage+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoundImage+Util.swift"; sourceTree = "<group>"; };
 		57ED590D1EA7267300BF0CD0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		D6044E5E1F1CA169D43EB741 /* Pods-health-engineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-engineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-health-engineTests/Pods-health-engineTests.release.xcconfig"; sourceTree = "<group>"; };
+		F55990771EA86693001F0769 /* DisplayImage+Biz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DisplayImage+Biz.swift"; sourceTree = "<group>"; };
+		F55990791EA882C9001F0769 /* FlickrImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC14E923329B751AB7EE4C9B /* Pods-health-engineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-engineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-health-engineUITests/Pods-health-engineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +131,7 @@
 		57ED58CD1EA6EC1800BF0CD0 /* health-engine */ = {
 			isa = PBXGroup;
 			children = (
-				57ED58FC1EA6ED2100BF0CD0 /* healthEngine */,
+				57ED58FD1EA6ED6B00BF0CD0 /* Entity */,
 				57ED58CE1EA6EC1800BF0CD0 /* AppDelegate.swift */,
 				57ED58D01EA6EC1800BF0CD0 /* ViewController.swift */,
 				57ED58D21EA6EC1800BF0CD0 /* Main.storyboard */,
@@ -156,14 +160,6 @@
 			path = "health-engineUITests";
 			sourceTree = "<group>";
 		};
-		57ED58FC1EA6ED2100BF0CD0 /* healthEngine */ = {
-			isa = PBXGroup;
-			children = (
-				57ED58FD1EA6ED6B00BF0CD0 /* Entity */,
-			);
-			name = healthEngine;
-			sourceTree = "<group>";
-		};
 		57ED58FD1EA6ED6B00BF0CD0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +174,7 @@
 				57ED59041EA7010600BF0CD0 /* Error */,
 				57ED58FF1EA6EDA200BF0CD0 /* Model */,
 				57ED590D1EA7267300BF0CD0 /* MyPlayground.playground */,
+				F55990791EA882C9001F0769 /* FlickrImageCollectionViewCell.swift */,
 			);
 			name = ImageViewer;
 			sourceTree = "<group>";
@@ -188,8 +185,9 @@
 				57ED59001EA6F23800BF0CD0 /* FoundImage.swift */,
 				57ED59021EA6F31600BF0CD0 /* FoundImage+Init.swift */,
 				57ED59071EA7041B00BF0CD0 /* DisplayImage.swift */,
-				57ED59091EA71A2600BF0CD0 /* DisplayImage+Biz.swift */,
-				57ED590B1EA7211500BF0CD0 /* DisplayImage+Util.swift */,
+				57ED59091EA71A2600BF0CD0 /* FoundImage+Biz.swift */,
+				57ED590B1EA7211500BF0CD0 /* FoundImage+Util.swift */,
+				F55990771EA86693001F0769 /* DisplayImage+Biz.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -510,8 +508,10 @@
 				57ED59011EA6F23800BF0CD0 /* FoundImage.swift in Sources */,
 				57ED59061EA7014100BF0CD0 /* ImageViewerError.swift in Sources */,
 				57ED59031EA6F31600BF0CD0 /* FoundImage+Init.swift in Sources */,
-				57ED590C1EA7211500BF0CD0 /* DisplayImage+Util.swift in Sources */,
-				57ED590A1EA71A2600BF0CD0 /* DisplayImage+Biz.swift in Sources */,
+				57ED590C1EA7211500BF0CD0 /* FoundImage+Util.swift in Sources */,
+				F559907A1EA882C9001F0769 /* FlickrImageCollectionViewCell.swift in Sources */,
+				F55990781EA86693001F0769 /* DisplayImage+Biz.swift in Sources */,
+				57ED590A1EA71A2600BF0CD0 /* FoundImage+Biz.swift in Sources */,
 				57ED59081EA7041B00BF0CD0 /* DisplayImage.swift in Sources */,
 				57ED58CF1EA6EC1800BF0CD0 /* AppDelegate.swift in Sources */,
 			);

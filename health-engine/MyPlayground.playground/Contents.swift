@@ -4,7 +4,7 @@ import UIKit
 import PlaygroundSupport
 import Foundation
 
- let airportSvcEndpointRequest = URL(string: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=80968f2b2c113c7bc2fcbddcfe330089&lat=33.8688&lon=151.2093&format=json&nojsoncallback=1&auth_token=72157679580816463-17df17d56997b3f1&api_sig=488c9791b20d2ef205bda8cf5fb17e56")
+ let airportSvcEndpointRequest = URL(string: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=e3eaa0bebc998ee957775d942766c6e8&nojsoncallback=1&format=json&auth_token=72157680769617861-65533c22964cdc58&api_sig=c67ea848bed1b9b9e32380b80df0c1cc&lat=33.8688&lon=151.2093")
 
 let session = URLSession.shared
 
@@ -27,7 +27,7 @@ let task = session.dataTask(with: airportSvcEndpointRequest!, completionHandler:
         
         for case let item in photo {
         
-            print(item["title"] ?? 0)
+            print(item["farm"] ?? 0)
             
         }
         

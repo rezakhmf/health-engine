@@ -7,8 +7,10 @@
 //
 
 import Foundation
+
 struct DisplayImage {
     let imageTitle: String
-    let thumbnameUrl: String
-    let mediumImageUrl: String
+    let thumbnailUrl: URL
+    let mediumImageUrl: URL
 }
+

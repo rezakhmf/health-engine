@@ -10,7 +10,8 @@ import Foundation
 
 struct FoundImage {
     let id: String
+    let title: String
     let secret: String
-    let server: Int
+    let server: String
     let farm: Int
 }
